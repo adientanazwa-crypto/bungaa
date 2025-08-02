@@ -984,3 +984,32 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 .not-loaded * {
   animation-play-state: paused !important;
 }
+
+.animated-text {
+  position: absolute;
+  top: 8vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  text-align: center;
+  z-index: 100;
+  margin: 0;
+  padding: 0 2vw;
+}
+
+.glow {
+  color: #fff;
+  text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7, 0 0 30px #00ffe7;
+  font-size: 6vw; /* Responsive font size for mobile */
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .glow {
+    font-size: 7vw;
+  }
+  .animated-text {
+    top: 5vw;
+    padding: 0 4vw;
+  }
+}
